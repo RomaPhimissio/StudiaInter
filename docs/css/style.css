@@ -389,12 +389,15 @@ img {
   .header__btn-send-wrap {
     order: 1;
     position: absolute;
-    transform: translate(70%, -200%);
+    transform: translate(0%, -200%);
     left: 0;
     transition: all 0.5s ease 0s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .header__btn-send-wrap.active {
-    transform: translate(70%, 1070%);
+    transform: translate(0%, 1070%);
   }
   .header__info-social-block {
     display: none;
@@ -2412,6 +2415,7 @@ img {
 .contacts__main {
   background: url("../img/cont-phone-mob-main.jpg") no-repeat center;
   min-height: 745px;
+  background-size: cover;
 }
 .contacts__container {
   max-width: 1350px;
@@ -2521,6 +2525,7 @@ img {
   .contacts__main {
     background: url("../img/cont-phone-tab-main.jpg") no-repeat center;
     min-height: 1024px;
+    background-size: cover;
   }
   .contacts__wrap {
     padding: 89px 124px 10px;
@@ -2581,6 +2586,7 @@ img {
   .contacts__main {
     background: url("../img/cont-phone-note-main.jpg") no-repeat center;
     min-height: 768px;
+    background-size: cover;
   }
   .contacts__wrap {
     padding: 103px 107px 10px 159px;
@@ -2628,6 +2634,7 @@ img {
   .contacts__main {
     background: url("../img/cont-phone-desk-main.jpg") no-repeat center;
     min-height: 744px;
+    background-size: cover;
   }
   .contacts__wrap {
     padding: 120px 100px 10px 149px;

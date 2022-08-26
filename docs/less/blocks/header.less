@@ -403,13 +403,16 @@
 	.header__btn-send-wrap {
 		order: 1;
 		position: absolute;
-		transform: translate(70%, -200%);
+		transform: translate(0%, -200%);
 		left: 0;
 		transition: all 0.5s ease 0s;
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 
 	.header__btn-send-wrap.active {
-		transform: translate(70%, 1070%);
+		transform: translate(0%, 1070%);
 	}
 
 	.header__info-social-block {
