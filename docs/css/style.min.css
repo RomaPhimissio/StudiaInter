@@ -255,7 +255,7 @@ img {
 }
 @media (max-width: 1439px) {
   .header.active {
-    min-height: 830px;
+    min-height: 1010px;
     z-index: 10;
   }
   .header-blog.active {
@@ -2576,7 +2576,7 @@ img {
   }
   .contacts__text {
     width: 85%;
-    letter-spacing: -0.06px;
+    letter-spacing: -0.03px;
   }
   .cotacts__block-next {
     flex-direction: row;
