@@ -9,7 +9,7 @@
 }
 
 .desc__wrap {
-    padding: 116px 20px 10px 24px;
+    padding: 117px 20px 10px 24px;
 }
 
 .desc__subtitle {
@@ -20,14 +20,13 @@
 }
 
 .desc__text {
-    letter-spacing: -0.09px;
     margin-bottom: 57px;
 }
 
 .text-general-style {
     font-weight: 300;
     font-size: 14px;
-    line-height: 23.9px;
+    line-height: 23.89px;
     color: #080808;
     opacity: 0.7;
 }
@@ -37,17 +36,26 @@
 }
 
 .desc__img-wrap {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-content: 1fr;
+    width: 100%;
     font-size: 0;
     margin-bottom: 63px;
     padding-right: 4px;
 }
 
-.desc__img-tab,
-.desc__img-note,
-.desc__img-desk {
-    display: none;
+.desc__img-wrap-body {
+    position: relative;
+    padding-bottom: calc(220 / 327 * 100%);
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .desc__content-subtitle {
@@ -75,32 +83,59 @@
     color: #080808;
     opacity: 0.7;
     margin-bottom: 10px;
-    letter-spacing: -0.25px;
+    letter-spacing: -0.19px;
+}
+
+.desc__item-text:nth-child(4) {
+    letter-spacing: -0.15px;
+    width: 95%;
 }
 
 .desc__text-other {
-    letter-spacing: -0.08px;
-    margin-bottom: 66px;
+    margin-bottom: 67px;
 }
 
 .desc__block-picture {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 0.5em;
-    grid-auto-flow: row;
-    justify-content: center;
     padding-right: 4px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 8px;
 }
 
 .desc__pic-wrap {
     font-size: 0;
-    width: max-content;
-    justify-self: center;
+    position: relative;
+    padding-bottom: calc(220 / 327 * 100%);
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
-.desc__pic-tab,
-.desc__pic-note,
-.desc__pic-desk,
+.desc__pic-wrap:nth-child(2) {
+    padding-bottom: calc(393 / 327 * 100%);
+}
+
+.desc__pic-wrap:nth-child(3) {
+    padding-bottom: calc(392 / 327 * 100%);
+}
+
+.desc__pic-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .desc__brake-desk,
 .desc__text-desk {
     display: none;
@@ -123,20 +158,16 @@
     }
 
     .desc__text {
-        letter-spacing: -0.04px;
         margin-bottom: 64px;
     }
 
     .desc__img-wrap {
         margin-bottom: 71px;
+        padding: 0 28px 0 24px;
     }
 
-    .desc__img {
-        display: none;
-    }
-
-    .desc__img-tab {
-        display: block;
+    .desc__img-wrap-body {
+        padding-bottom: calc(335 / 672 * 100%);
     }
 
     .desc__block-content {
@@ -145,20 +176,18 @@
 
     .desc__block-picture {
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: max-content;
-        grid-auto-flow: row;
-        justify-content: center;
-        margin: auto;
+        padding-left: 4px;
+        padding-right: 8px;
     }
 
     .desc__pic-wrap:first-child {
         grid-column: span 2;
+        padding-bottom: calc(334 / 672 * 100%);
     }
 
-    .desc__pic-wrap {
-        font-size: 0;
-        width: max-content;
-        justify-self: center;
+    .desc__pic-wrap:nth-child(2),
+    .desc__pic-wrap:nth-child(3) {
+        padding-bottom: calc(400 / 332 * 100%);
     }
 
     .desc__content-subtitle {
@@ -168,7 +197,6 @@
 
     .desc__content-text {
         padding: 0 80px;
-        letter-spacing: -0.04px;
         margin-bottom: 33px;
     }
 
@@ -180,14 +208,6 @@
     .desc__text-other {
         padding: 0 80px;
         margin-bottom: 75px;
-    }
-
-    .desc__pic {
-        display: none;
-    }
-
-    .desc__pic-tab {
-        display: block;
     }
 }
 
@@ -208,18 +228,16 @@
 
     .desc__text {
         margin-bottom: 72px;
+        width: 98%;
     }
 
     .desc__img-wrap {
         margin-bottom: 87px;
+        padding: 0 36px 0 32px;
     }
 
-    .desc__img-tab {
-        display: none;
-    }
-
-    .desc__img-note {
-        display: block;
+    .desc__img-wrap-body {
+        padding-bottom: calc(454 / 912 * 100%);
     }
 
     .desc__content-subtitle {
@@ -230,6 +248,7 @@
     .desc__content-text {
         padding: 0 115px;
         margin-bottom: 22px;
+        width: 99%;
     }
 
     .desc__list-text {
@@ -247,16 +266,17 @@
     }
 
     .desc__block-picture {
-        padding-right: 12px;
-        padding-left: 8px;
+        padding-right: 16px;
+        padding-left: 12px;
     }
 
-    .desc__pic-tab {
-        display: none;
+    .desc__pic-wrap:first-child {
+        padding-bottom: calc(454 / 912 * 100%);
     }
 
-    .desc__pic-note {
-        display: block;
+    .desc__pic-wrap:nth-child(2),
+    .desc__pic-wrap:nth-child(3) {
+        padding-bottom: calc(544 / 452 * 100%);
     }
 }
 
@@ -288,8 +308,7 @@
     }
 
     .desc__text {
-        width: 95%;
-        letter-spacing: -0.1px;
+        width: 96%;
     }
 
     .desc__block-share {
@@ -369,23 +388,19 @@
     }
 
     .desc__img-wrap {
-        padding: 0;
+        padding: 0 64px;
         margin-bottom: 95px;
     }
 
-    .desc__img-note {
-        display: none;
-    }
-
-    .desc__img-desk {
-        display: block;
+    .desc__img-wrap-body {
+        padding-bottom: calc(652 / 1312 * 100%);
     }
 
     .desc__text-desk {
         padding: 0 133px;
         display: block;
         width: 75%;
-        margin-bottom: 100px;
+        margin-bottom: 99px;
     }
 
     .desc__block-content {
@@ -394,7 +409,6 @@
 
     .desc__content-subtitle {
         width: 51%;
-        letter-spacing: -0.3px;
         margin-bottom: 16px;
         padding: 0 133px;
     }
@@ -406,7 +420,7 @@
     }
 
     .desc__list-text {
-        margin-bottom: 27px;
+        margin-bottom: 28px;
         padding: 0 133px;
     }
 
@@ -415,12 +429,16 @@
         justify-content: space-between;
     }
 
-    .desc__pic-note,
-    .desc__text-other {
-        display: none;
+    .desc__pic-wrap:first-child {
+        padding-bottom: calc(653 / 1312 * 100%);
     }
 
-    .desc__pic-desk {
-        display: block;
+    .desc__pic-wrap:nth-child(2),
+    .desc__pic-wrap:nth-child(3) {
+        padding-bottom: calc(777 / 652 * 100%);
+    }
+
+    .desc__text-other {
+        display: none;
     }
 }
