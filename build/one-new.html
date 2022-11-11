@@ -7,6 +7,7 @@
   <title>Studia</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
@@ -38,8 +39,10 @@
             <li class="header__item header__item-news"><a class="header__item-link header__color-news"
                 href="projects.html">Projects</a>
             </li>
-            <li class="header__item"><a class="header__item-link header__color-news" href="blog.html">About us</a></li>
+            <li class="header__item"><a class="header__item-link header__color-news" href="one-project.html">About
+                us</a></li>
             <li class="header__item"><a class="header__item-link header__color-news" href="#">Blog</a></li>
+            <li class="header__item"><a class="header__item-link header__color-news" href="news.html">News</a></li>
             <li class="header__item"><a class="header__item-link header__color-news" href="contacts.html">Contacts</a>
             </li>
           </ul>
@@ -54,8 +57,8 @@
             <span class="header__info-city">Berlin</span>
           </div>
           <div class="header__info-contacts">
-            <a class="header__tel" href="one-project.html">+380935705222</a>
-            <a class="header__mail" href="news.html">info@hi-light.pl</a>
+            <a class="header__tel" href="tel: +380935705222">+380935705222</a>
+            <a class="header__mail" href="mailto: info@hi-light.pl">info@hi-light.pl</a>
           </div>
         </div>
       </div>
@@ -92,7 +95,8 @@
           <div class="desc__img-wrap">
             <div class="desc__img-wrap-body">
               <picture>
-                <img src="img/desc-picture.jpg" alt="">
+                <source type='image/webp' srcset='img/desc-picture.webp'>
+                <img src="img/desc-picture.jpg" alt="interier">
               </picture>
             </div>
           </div>
@@ -133,17 +137,20 @@
             <div class="desc__block-picture">
               <div class="desc__pic-wrap">
                 <picture>
-                  <img src="img/desc-pic1.jpg" alt="">
+                  <source type='image/webp' srcset='img/desc-pic1.webp'>
+                  <img src="img/desc-pic1.jpg" alt="interier" loading="lazy">
                 </picture>
               </div>
               <div class="desc__pic-wrap">
                 <picture>
-                  <img src="img/desc-pic2.jpg" alt="">
+                  <source type='image/webp' srcset='img/desc-picture.webp'>
+                  <img src="img/desc-picture.jpg" alt="interier" loading="lazy">
                 </picture>
               </div>
               <div class="desc__pic-wrap">
                 <picture>
-                  <img src="img/desc-pic3.jpg" alt="">
+                  <source type='image/webp' srcset='img/desc-pic3.webp'>
+                  <img src="img/desc-pic3.jpg" alt="interier" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -185,56 +192,50 @@
       <div class="slide__container">
         <div class="slide__wrap">
           <h2 class="slide__title">Our latest news</h2>
-          <ul class="slide__list">
-            <li class="slide__item">
-              <div class="slide__picture">
-                <picture>
-                  <img class="slide-pic-mob" src="img/slide-mob-pic.jpg" alt="">
-                  <img class="slide-pic-tab" src="img/slide-tab-pic.jpg" alt="">
-                  <img class="slide-pic-note" src="img/slide-note-pic.jpg" alt="">
-                  <img class="slide-pic-desk" src="img/slide-desk-pic.jpg" alt="">
-                </picture>
-              </div>
-              <p class="slide__desc">Antrax IT - Italian factory for the production of radiators</p>
-              <time class="slide__time">01 January 2019</time>
-            </li>
-            <li class="slide__item">
-              <div class="slide__picture">
-                <picture>
-                  <img class="slide-pic-mob" src="img/slide-mob-pic2.jpg" alt="">
-                  <img class="slide-pic-tab" src="img/slide-tab-pic2.jpg" alt="">
-                  <img class="slide-pic-note" src="img/slide-note-pic2.jpg" alt="">
-                  <img class="slide-pic-desk" src="img/slide-desk-pic2.jpg" alt="">
-                </picture>
-              </div>
-              <p class="slide__desc">Antrax IT - Italian factory for the production of radiators</p>
-              <time class="slide__time">01 January 2019</time>
-            </li>
-            <li class="slide__item">
-              <div class="slide__picture">
-                <picture>
-                  <img class="slide-pic-mob" src="img/slide-mob-pic3.jpg" alt="">
-                  <img class="slide-pic-tab" src="img/slide-tab-pic3.jpg" alt="">
-                  <img class="slide-pic-note" src="img/slide-note-pic3.jpg" alt="">
-                  <img class="slide-pic-desk" src="img/slide-desk-pic3.jpg" alt="">
-                </picture>
-              </div>
-              <p class="slide__desc">Antrax IT - Italian factory for the production of radiators</p>
-              <time class="slide__time">01 January 2019</time>
-            </li>
-            <li class="slide__item">
-              <div class="slide__picture">
-                <picture>
-                  <img class="slide-pic-mob" src="img/slide-mob-pic4.jpg" alt="">
-                  <img class="slide-pic-tab" src="img/slide-tab-pic4.jpg" alt="">
-                  <img class="slide-pic-note" src="img/slide-note-pic4.jpg" alt="">
-                  <img class="slide-pic-desk" src="img/slide-desk-pic4.jpg" alt="">
-                </picture>
-              </div>
-              <p class="slide__desc">Antrax IT - Italian factory for the production of radiators</p>
-              <time class="slide__time">01 January 2019</time>
-            </li>
-          </ul>
+          <div class="slide__list-wrap swiper-container">
+            <ul class="slide__list swiper-wrapper">
+              <li class="slide__item swiper-slide">
+                <div class="slide__picture">
+                  <picture>
+                    <source type='image/webp' srcset='img/int1.webp'>
+                    <img src="img/int1.jpg" alt="interier" loading="lazy">
+                  </picture>
+                </div>
+                <p class="slide__desc">Antrax IT - Italian factory for the production of radiators</p>
+                <time class="slide__time">01 January 2019</time>
+              </li>
+              <li class="slide__item swiper-slide">
+                <div class="slide__picture">
+                  <picture>
+                    <source type='image/webp' srcset='img/int2.webp'>
+                    <img src="img/int2.jpg" alt="interier" loading="lazy">
+                  </picture>
+                </div>
+                <p class="slide__desc">Antrax IT - Italian factory for the production of radiators</p>
+                <time class="slide__time">01 January 2019</time>
+              </li>
+              <li class="slide__item swiper-slide">
+                <div class="slide__picture">
+                  <picture>
+                    <source type='image/webp' srcset='img/int3.webp'>
+                    <img src="img/int3.jpg" alt="interier" loading="lazy">
+                  </picture>
+                </div>
+                <p class="slide__desc">Antrax IT - Italian factory for the production of radiators</p>
+                <time class="slide__time">01 January 2019</time>
+              </li>
+              <li class="slide__item swiper-slide">
+                <div class="slide__picture">
+                  <picture>
+                    <source type='image/webp' srcset='img/int4.webp'>
+                    <img src="img/int4.jpg" alt="interier" loading="lazy">
+                  </picture>
+                </div>
+                <p class="slide__desc">Antrax IT - Italian factory for the production of radiators</p>
+                <time class="slide__time">01 January 2019</time>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -246,13 +247,14 @@
         <div class="footer__block-made">
           <p class="footer__made">Made with love in</p>
           <picture>
-            <img class="footer__img-text" src="img/footer-text-news.svg" alt="">
-            <img class="footer__img-text-tab" src="img/footer-text-news-tab.svg" alt="">
+            <img class="footer__img-text" src="img/footer-text-news.svg" alt="logotype">
+            <img class="footer__img-text-tab" src="img/footer-text-news-tab.svg" alt="logotype">
           </picture>
         </div>
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 

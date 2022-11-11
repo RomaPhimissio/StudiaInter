@@ -72,29 +72,41 @@
 }
 
 .news__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
 }
 
 .news__item {
-    margin: 0 auto;
-    margin-bottom: 6px;
+    width: 100%;
 }
 
 .news__picture-double {
-    width: 327px;
-    height: 355px;
     background: #F2F2F2;
     display: flex;
     flex-direction: column;
 }
 
 .news__img-wrap {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
+    font-size: 0;
+    position: relative;
+    // padding-bottom: 218px;
+    padding-bottom: 67%;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 
 .news__item-content {
     padding: 0 24px;
+    padding-bottom: 7%;
 }
 
 .news__item-subtitle {
@@ -145,9 +157,18 @@
 }
 
 .news__picture {
-    width: 327px;
-    height: 327px;
+    width: 100%;
     position: relative;
+    padding-bottom: 100%;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 
 .news__desc {
@@ -177,6 +198,7 @@
     background-size: 14px 14px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .news__pagination-btn {
@@ -188,6 +210,7 @@
     width: 20px;
     height: 20px;
     border: none;
+    cursor: pointer;
     background-color: transparent;
 }
 
@@ -221,12 +244,7 @@
     background-size: 14px 14px;
     border: none;
     background-color: transparent;
-}
-
-.news__img-tab,
-.news__img-note,
-.news__img-desk {
-    display: none;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -276,6 +294,15 @@
         margin-bottom: 45px;
     }
 
+    .news__list {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0.5%;
+    }
+
+    .news__item-first-last {
+        grid-column: span 2;
+    }
+
     .news__item:first-child {
         .news__img-wrap {
             order: 1;
@@ -287,14 +314,12 @@
     }
 
     .news__picture-double {
-        width: 672px;
-        height: 333px;
         flex-direction: row;
     }
 
     .news__img-wrap {
-        width: 333px;
-        height: 333px;
+        padding-bottom: 49.5%;
+        width: 49.6%;
         margin: 0;
         margin-left: auto;
     }
@@ -325,23 +350,9 @@
         line-height: 20.28px;
     }
 
-    .news__picture {
-        width: 333px;
-        height: 333px;
-    }
-
     .news__desc {
         bottom: 33px;
         left: 32px;
-    }
-
-    .news__double-img,
-    .news__img {
-        display: none;
-    }
-
-    .news__img-tab {
-        display: block;
     }
 }
 
@@ -368,18 +379,29 @@
         margin-bottom: 53px;
     }
 
-    .news__picture-double {
-        width: 911px;
-        height: 453px;
-    }
-
-    .news__img-wrap {
-        width: 453px;
-        height: 453px;
-    }
-
     .news__item-content {
         padding: 0 44px 46px;
+    }
+
+    .news__img-wrap,
+    .news__picture {
+        overflow: hidden;
+
+        img {
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    .news__picture:hover {
+        img {
+            transform: scale(1.07);
+        }
+    }
+
+    .news__img-wrap:hover {
+        img {
+            transform: scale(1.07);
+        }
     }
 
     .news__item-subtitle {
@@ -416,11 +438,6 @@
         }
     }
 
-    .news__picture {
-        width: 453px;
-        height: 453px;
-    }
-
     .news__desc {
         font-size: 20px;
         line-height: 25px;
@@ -443,15 +460,6 @@
 
     .news__pagination-btn-next {
         background: url("../img/right-pagi.svg") no-repeat 40% 75%;
-    }
-
-
-    .news__img-tab {
-        display: none;
-    }
-
-    .news__img-note {
-        display: block;
     }
 }
 
@@ -495,8 +503,12 @@
         margin-bottom: 83px;
     }
 
-    .news__item {
-        margin-bottom: 8px;
+    .news__list {
+        gap: 8px;
+    }
+
+    .news__item:nth-child(3) {
+        margin-left: auto;
     }
 
     .news__item:nth-child(4) {
@@ -509,14 +521,8 @@
         }
     }
 
-    .news__picture-double {
-        width: 1312px;
-        height: 653px;
-    }
-
     .news__img-wrap {
-        width: 656px;
-        height: 653px;
+        width: 49.7%;
     }
 
     .news__item-content {
@@ -535,24 +541,11 @@
         display: block;
     }
 
-    .news__picture {
-        width: 652px;
-        height: 652px;
-    }
-
     .news__desc {
         font-size: 28px;
         line-height: 36px;
         bottom: 57px;
         left: 55px;
         width: 40%;
-    }
-
-    .news__img-note {
-        display: none;
-    }
-
-    .news__img-desk {
-        display: block;
     }
 }

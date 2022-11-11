@@ -1,18 +1,28 @@
 .send {
     width: 100%;
     max-width: 100%;
-    background: url("../img/news-footer-back.jpg") no-repeat center;
+    background: url("../img/desc-picture.webp") no-repeat center;
     min-height: 518px;
     background-size: cover;
+    position: relative;
 }
 
-.sen__container {
+.send__container {
+    position: relative;
     max-width: 1350px;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .send__wrap {
     padding: 80px 20px 10px 24px;
+}
+
+.send__decor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.64);
 }
 
 .send__text {
@@ -45,7 +55,7 @@
     width: 17px;
     height: 14px;
     right: 7px;
-    top: 10px;
+    top: 0;
     bottom: 0;
     margin: auto 0;
     z-index: 5;
@@ -67,12 +77,9 @@
 
 @media (min-width: 768px) {
     .send {
-        background: url("../img/news-footer-back2.jpg") no-repeat center;
         min-height: 540px;
         background-size: cover;
     }
-
-    .sen__container {}
 
     .send__wrap {
         padding: 104px 122px 10px 124px;
@@ -85,23 +92,16 @@
         margin-bottom: 20px;
     }
 
-    .send__content {}
-
     .send__par {
         margin-bottom: 33px;
     }
-
-    .send__field {}
 }
 
 @media (min-width: 1024px) {
     .send {
-        background: url("../img/news-footer-back3.jpg") no-repeat center;
         min-height: 593px;
         background-size: cover;
     }
-
-    .sen__container {}
 
     .send__wrap {
         padding: 124px 122px 10px 159px;
@@ -121,18 +121,13 @@
         margin-bottom: 21px;
         padding-left: 2px;
     }
-
-    .send__field {}
 }
 
 @media (min-width: 1440px) {
     .send {
         background-size: cover;
-        background: url("../img/news-footer-back4.jpg") no-repeat center;
         min-height: 654px;
     }
-
-    .sen__container {}
 
     .send__wrap {
         padding: 137px 148px 10px 154px;

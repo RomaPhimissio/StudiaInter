@@ -22,3 +22,48 @@ if (burgerMenu) {
         headerBlog.classList.toggle('active');
     })
 }
+
+// ! Swiper Slide
+// инициилизируем слайдер
+new Swiper('.slide__list-wrap', {
+
+    // клавиатура
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true
+    },
+
+    // ширина слайда
+    slidesPerView: 'auto',
+    breakpoints: {
+        320: {
+            spaceBetween: 26,
+        },
+
+        768: {
+            spaceBetween: 20,
+        },
+
+        1024: {
+            spaceBetween: 40,
+        },
+
+        1440: {
+            spaceBetween: 48,
+        }
+    }
+})
+
+new Swiper('.showing__swiper', {
+
+    // клавиатура
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true
+    },
+
+    // ширина слайда
+    slidesPerView: 'auto',
+})

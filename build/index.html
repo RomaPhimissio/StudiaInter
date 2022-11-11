@@ -13,7 +13,7 @@
     <div class="header__container">
       <div class="header__wrap">
         <div class="header__logo">
-          <a class="header__logo-link" href="#"><img class="header__logo-img" src="img/logo.png" alt="Логотип"></a>
+          <a class="header__logo-link" href="#"><img class="header__logo-img" src="img/logo.webp" alt="Логотип"></a>
         </div>
         <button class="header__btn-speak">En</button>
         <div class="header__btn-send-wrap">
@@ -28,8 +28,9 @@
           <ul class="header__list">
             <li class="header__item item-hide"><a class="header__item-link" href="#">Home</a></li>
             <li class="header__item"><a class="header__item-link" href="projects.html">Projects</a></li>
-            <li class="header__item"><a class="header__item-link" href="blog.html">About us</a></li>
+            <li class="header__item"><a class="header__item-link" href="one-project.html">About us</a></li>
             <li class="header__item"><a class="header__item-link" href="one-new.html">Blog</a></li>
+            <li class="header__item"><a class="header__item-link" href="news.html">News</a></li>
             <li class="header__item"><a class="header__item-link" href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
@@ -43,8 +44,8 @@
             <span class="header__info-city">Berlin</span>
           </div>
           <div class="header__info-contacts">
-            <a class="header__tel" href="one-project.html">+380935705222</a>
-            <a class="header__mail" href="news.html">info@hi-light.pl</a>
+            <a class="header__tel" href="tel: +380935705222">+380935705222</a>
+            <a class="header__mail" href="mailto: info@hi-light.pl">info@hi-light.pl</a>
           </div>
         </div>
       </div>
@@ -53,11 +54,28 @@
   <main class="page-main">
     <h1 class="visually-hidden">Студия интерьеров</h1>
     <section class="showing">
+      <!-- <div class="showing__swiper swiper-container">
+        <div class="showing__swiper-wrapper swiper-wrapper">
+          <div class="showing__item-slide swiper-slide">
+            <picture>
+              <source type='image/webp' srcset='img/int3.webp'>
+              <img src="img/int3.jpg" alt="interier" loading="lazy">
+            </picture>
+          </div>
+          <div class="showing__item-slide swiper-slide">
+            <picture>
+              <source type='image/webp' srcset='img/int8.webp'>
+              <img src="img/int8.jpg" alt="interier" loading="lazy">
+            </picture>
+          </div>
+        </div>
+      </div> -->
+      <div class="showing__decor"></div>
       <div class="showing__container">
         <div class="showing__wrap">
           <div class="showing__block">
             <div class="showing__slide-content">
-              <div class="showing__slide-wrap">
+              <!-- <div class="showing__slide-wrap">
                 <div class="showing__slide">
                   <span class="showing__slide-element">02</span>
                   <div class="showing__scale">
@@ -65,7 +83,7 @@
                   </div>
                   <span class="showing__slide-element">04</span>
                 </div>
-              </div>
+              </div> -->
               <div class="showing__content">
                 <p class="showing__text">Thoughtful
                   making of space</p>
@@ -86,10 +104,10 @@
                 <span class="showing__info-city">Berlin</span>
               </div>
               <div class="showing__info-contacts">
-                <a class="showing__tel show-tel-desk" href="#">+380983527547</a>
-                <a class="showing__tel show-tel" href="#">+380935705222</a>
-                <a class="showing__mail show-mail" href="#">info@hi-light.pl</a>
-                <a class="showing__mail show-mail-desk" href="#">E: info@gmail.com</a>
+                <a class="showing__tel show-tel-desk" href="tel: +380983527547">+380983527547</a>
+                <a class="showing__tel show-tel" href="tel: +380935705222">+380935705222</a>
+                <a class="showing__mail show-mail" href="mailto: info@hi-light.pl">info@hi-light.pl</a>
+                <a class="showing__mail show-mail-desk" href="mailto: info@gmail.com">E: info@gmail.com</a>
               </div>
             </div>
           </div>
@@ -123,29 +141,31 @@
               <p class="comp__par">Discover more</p>
             </div>
             <div class="comp__picture">
-              <picture>
-                <img class="comp__pic-desk" src="img/comp-desk.jpg" alt="">
-                <img class="comp__pic-note" src="img/comp-note.jpg" alt="">
-              </picture>
+              <div class="comp__picture-wrap">
+                <picture>
+                  <source type='image/webp' srcset='img/int4.webp'>
+                  <img src="img/int4.jpg" alt="interier" loading="lazy">
+                </picture>
+              </div>
             </div>
           </div>
           <div class="comp__subcontent">
             <div class="comp__block">
               <div class="comp__layer-picture">
-                <picture>
-                  <img class="comp__layer-pic-desk" src="img/comp-inter-desk.jpg" alt="">
-                  <img class="comp__layer-pic-note" src="img/comp-inter-note.jpg" alt="">
-                  <img class="comp__layer-pic-tab" src="img/comp-inter-tab.jpg" alt="">
-                  <img class="comp__layer-pic" src="img/comp-inter.jpg" alt="">
-                </picture>
+                <div class="comp__layer-picture-wrap">
+                  <picture>
+                    <source type='image/webp' srcset='img/int2.webp'>
+                    <img src="img/int2.jpg" alt="interier" loading="lazy">
+                  </picture>
+                </div>
               </div>
               <div class="comp__sub-layer-picture">
-                <picture>
-                  <img class="comp__sub-layer-pic-desk" src="img/comp-rep-desk.jpg" alt="">
-                  <img class="comp__sub-layer-pic-note" src="img/comp-rep-note.jpg" alt="">
-                  <img class="comp__sub-layer-pic-tab" src="img/comp-rep-tab.jpg" alt="">
-                  <img class="comp__sub-layer-pic" src="img/comp-rep.jpg" alt="">
-                </picture>
+                <div class="comp__sub-layer-picture-wrap">
+                  <picture>
+                    <source type='image/webp' srcset='img/desc-pic1.webp'>
+                    <img src="img/desc-pic1.jpg" alt="interier" loading="lazy">
+                  </picture>
+                </div>
               </div>
             </div>
             <div class="comp__block">
@@ -166,10 +186,8 @@
             <li class="palette__item">
               <div class="palette__picture">
                 <picture class="palette__img-wrap">
-                  <img class="palette__img" src="img/pal1.jpg" alt="">
-                  <img class="palette__img-tab" src="img/paltab1.jpg" alt="">
-                  <img class="palette__img-note" src="img/palnote3.jpg" alt="">
-                  <img class="palette__img-desk" src="img/paldesk3.jpg" alt="">
+                  <source type='image/webp' srcset='img/int3.webp'>
+                  <img src="img/int3.jpg" alt="interier" loading="lazy">
                 </picture>
                 <div class="palette__content">
                   <div class="palette__info">
@@ -187,7 +205,8 @@
             <li class="palette__item palette__item-mob">
               <div class="palette__picture">
                 <picture class="palette__img-wrap">
-                  <img class="palette__img" src="img/pal2.jpg" alt="">
+                  <source type='image/webp' srcset='img/int5.webp'>
+                  <img src="img/int5.jpg" alt="interier" loading="lazy">
                 </picture>
                 <div class="palette__content">
                   <div class="palette__info">
@@ -205,10 +224,8 @@
             <li class="palette__item">
               <div class="palette__picture">
                 <picture class="palette__img-wrap">
-                  <img class="palette__img" src="img/pal3.png" alt="">
-                  <img class="palette__img-tab" src="img/paltab2.png" alt="">
-                  <img class="palette__img-note" src="img/palnote2.png" alt="">
-                  <img class="palette__img-desk" src="img/paldesk2.png" alt="">
+                  <source type='image/webp' srcset='img/int2.webp'>
+                  <img src="img/int2.jpg" alt="interier" loading="lazy">
                 </picture>
                 <div class="palette__content">
                   <div class="palette__info">
@@ -227,10 +244,8 @@
             <li class="palette__item">
               <div class="palette__picture">
                 <picture class="palette__img-wrap">
-                  <img class="palette__img" src="img/pal4.jpg" alt="">
-                  <img class="palette__img-tab" src="img/paltab3.jpg" alt="">
-                  <img class="palette__img-note" src="img/palnote1.jpg" alt="">
-                  <img class="palette__img-desk" src="img/paldesk1.jpg" alt="">
+                  <source type='image/webp' srcset='img/desc-picture.webp'>
+                  <img src="img/desc-picture.jpg" alt="interier" loading="lazy">
                 </picture>
                 <div class="palette__content">
                   <div class="palette__info">
@@ -248,10 +263,8 @@
             <li class="palette__item">
               <div class="palette__picture">
                 <picture class="palette__img-wrap">
-                  <img class="palette__img" src="img/pal5.jpg" alt="">
-                  <img class="palette__img-tab" src="img/paltab4.jpg" alt="">
-                  <img class="palette__img-note" src="img/palnote4.jpg" alt="">
-                  <img class="palette__img-desk" src="img/paldesk4.jpg" alt="">
+                  <source type='image/webp' srcset='img/int7.webp'>
+                  <img src="img/int7.jpg" alt="interier" loading="lazy">
                 </picture>
                 <div class="palette__content">
                   <div class="palette__info">
@@ -269,13 +282,13 @@
             </li>
             <li class="palette__item">
               <div class="palette__picture">
-                <picture class="palette__img-wrap">
-                  <img class="palette__img img-last" src="img/pal6.jpg" alt="">
-                  <img class="palette__img-tab" src="img/paltab5.jpg" alt="">
-                  <img class="palette__img-note" src="img/palnote5.jpg" alt="">
-                  <img class="palette__img-desk" src="img/paldesk5.jpg" alt="">
-                </picture>
                 <p class="palette__text-only">See more 60 projects</p>
+                <div class="palette__img-wrap">
+                  <picture>
+                    <source type='image/webp' srcset='img/desc-picture.webp'>
+                    <img src="img/desc-picture.jpg" alt="interier" loading="lazy">
+                  </picture>
+                </div>
               </div>
             </li>
           </ul>
@@ -286,7 +299,8 @@
             </div>
             <div class="palette__block-pic">
               <picture>
-                <img src="img/pic-more.png" alt="">
+                <source type='image/webp' srcset='img/pic-more.webp'>
+                <img src="img/pic-more.png" alt="interier" loading="lazy">
               </picture>
             </div>
             <div class="palette__block-part">
@@ -310,63 +324,50 @@
             vitae posuere. </p>
           <div class="design__picture">
             <picture>
-              <img class="design__img" src="img/des1.jpg" alt="">
-              <img class="design__img-tab" src="img/des-tab1.jpg" alt="">
-              <img class="design__img-note" src="img/des-note1.jpg" alt="">
-              <img class="design__img-desk" src="img/des-desk1.jpg" alt="">
+              <source type='image/webp' srcset='img/int2.webp'>
+              <img src="img/int2.jpg" alt="interier" loading="lazy">
             </picture>
           </div>
           <div class="design__picture">
             <picture>
-              <img class="design__img" src="img/des2.jpg" alt="">
-              <img class="design__img-tab" src="img/des-tab2.jpg" alt="">
-              <img class="design__img-note" src="img/des-note2.jpg" alt="">
-              <img class="design__img-desk" src="img/des-desk2.jpg" alt="">
+              <source type='image/webp' srcset='img/desc-pic1.webp'>
+              <img src="img/desc-pic1.jpg" alt="interier" loading="lazy">
             </picture>
           </div>
           <div class="design__picture">
             <picture>
-              <img class="design__img" src="img/des3.jpg" alt="">
-              <img class="design__img-tab" src="img/des-tab3.jpg" alt="">
-              <img class="design__img-note" src="img/des-note3.jpg" alt="">
-              <img class="design__img-desk" src="img/des-desk3.jpg" alt="">
+              <source type='image/webp' srcset='img/int3.webp'>
+              <img src="img/int3.jpg" alt="interier" loading="lazy">
             </picture>
           </div>
           <div class="design__picture">
             <picture>
-              <img class="design__img" src="img/des4.jpg" alt="">
-              <img class="design__img-tab" src="img/des-tab4.jpg" alt="">
-              <img class="design__img-note" src="img/des-note4.jpg" alt="">
-              <img class="design__img-desk" src="img/des-desk4.jpg" alt="">
+              <source type='image/webp' srcset='img/int5.webp'>
+              <img src="img/int5.jpg" alt="interier" loading="lazy">
             </picture>
           </div>
           <div class="design__picture">
             <picture>
-              <img class="design__img" src="img/des5.jpg" alt="">
-              <img class="design__img-tab" src="img/des-tab5.jpg" alt="">
-              <img class="design__img-note" src="img/des-note5.jpg" alt="">
-              <img class="design__img-desk" src="img/des-desk5.jpg" alt="">
+              <source type='image/webp' srcset='img/int1.webp'>
+              <img src="img/int1.jpg" alt="interier" loading="lazy">
             </picture>
           </div>
           <div class="design__picture">
             <picture>
-              <img class="design__img" src="img/des6.jpg" alt="">
-              <img class="design__img-tab" src="img/des-tab6.jpg" alt="">
-              <img class="design__img-note" src="img/des-note6.jpg" alt="">
-              <img class="design__img-desk" src="img/des-desk6.jpg" alt="">
+              <source type='image/webp' srcset='img/int6.webp'>
+              <img src="img/int6.jpg" alt="interier" loading="lazy">
             </picture>
           </div>
           <div class="design__picture">
             <picture>
-              <img class="design__img" src="img/des7.jpg" alt="">
-              <img class="design__img-tab" src="img/des-tab7.jpg" alt="">
-              <img class="design__img-note" src="img/des-note7.jpg" alt="">
-              <img class="design__img-desk" src="img/des-desk7.jpg" alt="">
+              <source type='image/webp' srcset='img/int4.webp'>
+              <img src="img/int4.jpg" alt="interier" loading="lazy">
             </picture>
           </div>
           <div class="design__picture design__picture-view">
             <picture>
-              <img class="design__img-desk" src="img/des-desk8.jpg" alt="">
+              <source type='image/webp' srcset='img/int2.webp'>
+              <img src="img/int2.jpg" alt="interier" loading="lazy">
             </picture>
           </div>
         </div>
@@ -432,13 +433,14 @@
         <div class="footer__block-made">
           <p class="footer__made">Made with love in</p>
           <picture>
-            <img class="footer__img-text" src="img/footer-text.svg" alt="">
-            <img class="footer__img-text-tab" src="img/footer-text-tab.svg" alt="">
+            <img class="footer__img-text" src="img/footer-text.svg" alt="logotype">
+            <img class="footer__img-text-tab" src="img/footer-text-tab.svg" alt="logotype">
           </picture>
         </div>
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 

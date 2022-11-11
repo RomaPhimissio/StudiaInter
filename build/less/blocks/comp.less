@@ -80,9 +80,8 @@
     bottom: 2px;
 }
 
-.comp__pic-desk,
-.comp__pic-note,
-.comp__br {
+.comp__br,
+.comp__picture {
     display: none;
 }
 
@@ -104,35 +103,41 @@
     z-index: 3;
     top: 0;
     right: 0;
-}
-
-.comp__layer-pic-desk,
-.comp__layer-pic-note,
-.comp__layer-pic-tab {
-    display: none;
-}
-
-.comp__layer-pic {
     width: 264px;
-    height: 162px;
-    display: block;
+}
+
+.comp__layer-picture-wrap {
+    position: relative;
+    padding-bottom: 61%;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 
 .comp__sub-layer-picture {
     position: absolute;
     bottom: 0;
-}
-
-.comp__sub-layer-pic-tab,
-.comp__sub-layer-pic-note,
-.comp__sub-layer-pic-desk {
-    display: none;
-}
-
-.comp__sub-layer-pic {
     width: 131px;
-    height: 163px;
-    display: block;
+}
+
+.comp__sub-layer-picture-wrap {
+    position: relative;
+    padding-bottom: 125%;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 
 .comp__sub-text {
@@ -186,24 +191,12 @@
 
     }
 
-    .comp__layer-pic-tab {
+    .comp__layer-picture {
         width: 383px;
-        height: 235px;
-        display: block;
     }
 
-    .comp__layer-pic {
-        display: none;
-    }
-
-    .comp__sub-layer-pic-tab {
+    .comp__sub-layer-picture {
         width: 153px;
-        height: 191px;
-        display: block;
-    }
-
-    .comp__sub-layer-pic {
-        display: none;
     }
 
     .comp__sub-text {
@@ -239,15 +232,54 @@
     }
 
     .comp__picture {
+        display: initial;
         position: absolute;
         right: 0;
         top: 124px;
+        width: 349px;
     }
 
-    .comp__pic-note {
-        width: 349px;
-        height: 439px;
-        display: block;
+    .comp__picture-wrap {
+        position: relative;
+        padding-bottom: 126%;
+
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    .comp__picture-wrap:hover {
+        img {
+            transform: scale(1.07);
+
+        }
+    }
+
+    .comp__layer-picture,
+    .comp__sub-layer-picture {
+        width: 190px;
+
+        img {
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    .comp__layer-picture:hover {
+        img {
+            transform: scale(1.07);
+        }
+    }
+
+    .comp__sub-layer-picture:hover {
+        img {
+            transform: scale(1.07);
+        }
     }
 
     .comp__subcontent {
@@ -262,26 +294,6 @@
     .comp__block:last-child {
         width: 51%;
         padding-top: 150px;
-    }
-
-    .comp__layer-pic-note {
-        width: 190px;
-        height: 117px;
-        display: block;
-    }
-
-    .comp__layer-pic-tab {
-        display: none;
-    }
-
-    .comp__sub-layer-pic-note {
-        width: 190px;
-        height: 237px;
-        display: block;
-    }
-
-    .comp__sub-layer-pic-tab {
-        display: none;
     }
 
     .comp__br {
@@ -328,12 +340,19 @@
     .comp__picture {
         right: -45px;
         top: 140px;
+        width: 513px;
     }
 
-    .comp__pic-desk {
-        width: 513px;
-        height: 607px;
-        display: block;
+    .comp__picture-wrap {
+        padding-bottom: 118.5%;
+    }
+
+    .comp__layer-picture {
+        width: 279px;
+    }
+
+    .comp__sub-layer-picture {
+        width: 316px;
     }
 
     .comp__block:first-child {
@@ -347,25 +366,7 @@
         padding-right: 18px;
     }
 
-    .comp__layer-pic-desk {
-        width: 279px;
-        height: 172px;
-        display: block;
-    }
-
-    .comp__layer-pic-note {
-        display: none;
-    }
-
-    .comp__sub-layer-pic-desk {
-        width: 316px;
-        height: 393px;
-        display: block;
-    }
-
-    .comp__sub-layer-pic-note,
-    .comp__br,
-    .comp__pic-note {
+    .comp__br {
         display: none;
     }
 

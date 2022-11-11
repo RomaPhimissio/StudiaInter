@@ -113,6 +113,7 @@
     border: 1px solid rgba(0, 0, 0, 0.32);
     background: transparent;
     padding-top: 4px;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -192,11 +193,30 @@
 
     .capacity__picture {
         padding-bottom: calc(454 / 912 * 100%);
+        overflow: hidden;
+
+        img {
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    .capacity__picture:hover {
+        img {
+            transform: scale(1.07);
+        }
     }
 
     .capacity__picture:nth-child(2),
     .capacity__picture:nth-child(3) {
         padding-bottom: calc(544 / 452 * 100%);
+    }
+
+    .capacity__btn {
+        transition: all 0.3s ease 0s;
+    }
+
+    .capacity__btn:hover {
+        font-size: 13px;
     }
 
     .capacity__wrap-btn {

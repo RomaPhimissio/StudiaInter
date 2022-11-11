@@ -13,7 +13,7 @@
     <div class="header__container">
       <div class="header__wrap header__wrap-one-project">
         <div class="header__logo header__logo-one-project">
-          <a class="header__logo-link" href="index.html"><img class="header__logo-img" src="img/logo.png"
+          <a class="header__logo-link" href="index.html"><img class="header__logo-img" src="img/logo.webp"
               alt="Логотип"></a>
         </div>
         <button class="header__btn-speak">En</button>
@@ -29,8 +29,9 @@
           <ul class="header__list">
             <li class="header__item item-hide"><a class="header__item-link" href="index.html">Home</a></li>
             <li class="header__item"><a class="header__item-link" href="projects.html">Projects</a></li>
-            <li class="header__item"><a class="header__item-link" href="blog.html">About us</a></li>
+            <li class="header__item"><a class="header__item-link" href="#">About us</a></li>
             <li class="header__item"><a class="header__item-link" href="one-new.html">Blog</a></li>
+            <li class="header__item"><a class="header__item-link" href="news.html">News</a></li>
             <li class="header__item"><a class="header__item-link" href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
@@ -44,8 +45,8 @@
             <span class="header__info-city">Berlin</span>
           </div>
           <div class="header__info-contacts">
-            <a class="header__tel" href="#">+380935705222</a>
-            <a class="header__mail" href="news.html">info@hi-light.pl</a>
+            <a class="header__tel" href="tel: +380935705222">+380935705222</a>
+            <a class="header__mail" href="mailto: info@hi-light.pl">info@hi-light.pl</a>
           </div>
         </div>
       </div>
@@ -110,22 +111,26 @@
           <div class="capacity__block-view">
             <div class="capacity__picture">
               <picture>
-                <img src="img/desc-picture.jpg" alt="">
+                <source type='image/webp' srcset='img/desc-picture.webp'>
+                <img src="img/desc-picture.jpg" alt="interier" loading="lazy">
               </picture>
             </div>
             <div class="capacity__picture">
               <picture>
-                <img src="img/cap-pic2.jpg" alt="">
+                <source type='image/webp' srcset='img/cap-pic2.webp'>
+                <img src="img/cap-pic2.jpg" alt="interier" loading="lazy">
               </picture>
             </div>
             <div class="capacity__picture">
               <picture>
-                <img src="img/cap-pic3.jpg" alt="">
+                <source type='image/webp' srcset='img/cap-pic3.webp'>
+                <img src="img/cap-pic3.jpg" alt="interier" loading="lazy">
               </picture>
             </div>
             <div class="capacity__picture">
               <picture>
-                <img src="img/cap-pic4.jpg" alt="">
+                <source type='image/webp' srcset='img/desc-pic1.webp'>
+                <img src="img/desc-pic1.jpg" alt="interier" loading="lazy">
               </picture>
             </div>
           </div>
@@ -146,7 +151,8 @@
               </div>
               <div class="multi__block-pic">
                 <picture>
-                  <img src="img/pic-more.png" alt="">
+                  <source type='image/webp' srcset='img/pic-more.webp'>
+                  <img src="img/pic-more.png" alt="interier" loading="lazy">
                 </picture>
               </div>
               <div class="multi__block-part">
@@ -166,12 +172,12 @@
         </div>
       </section>
       <div class="multi__picture-hide">
-        <picture>
-          <img class="multi-mob" src="img/multi-mob.jpg" alt="">
-          <img class="multi-tab" src="img/multi-tab.jpg" alt="">
-          <img class="multi-note" src="img/multi-note.jpg" alt="">
-          <img class="multi-desk" src="img/multi-desk.jpg" alt="">
-        </picture>
+        <div class="multi__picture-hide-wrap">
+          <picture>
+            <source type='image/webp' srcset='img/desc-picture.webp'>
+            <img src="img/desc-picture.jpg" alt="interier" loading="lazy">
+          </picture>
+        </div>
       </div>
       <div class="multi__add-section">
       </div>

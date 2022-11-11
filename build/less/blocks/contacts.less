@@ -1,15 +1,15 @@
 .contacts {
     width: 100%;
     max-width: 100%;
-    background: url("../img/cont-phone.png") no-repeat center;
+    background: url("../img/cont-phone-desk-main.webp") no-repeat center;
     min-height: 727px;
     background-size: cover;
 }
 
 .contacts__main {
-    background: url("../img/cont-phone-mob-main.jpg") no-repeat center;
     min-height: 745px;
     background-size: cover;
+    height: 100vh;
 }
 
 .contacts__container {
@@ -123,6 +123,7 @@
     border: none;
     width: 183px;
     height: 42px;
+    cursor: pointer;
 }
 
 .contacts__title-desk {
@@ -131,13 +132,11 @@
 
 @media (min-width: 768px) {
     .contacts {
-        background: url("../img/cont-phone-tab.png") no-repeat center;
         min-height: 574px;
         background-size: cover;
     }
 
     .contacts__main {
-        background: url("../img/cont-phone-tab-main.jpg") no-repeat center;
         min-height: 1024px;
         background-size: cover;
     }
@@ -207,13 +206,11 @@
 
 @media (min-width: 1024px) {
     .contacts {
-        background: url("../img/cont-phone-note.png") no-repeat center;
         min-height: 628px;
         background-size: cover;
     }
 
     .contacts__main {
-        background: url("../img/cont-phone-note-main.jpg") no-repeat center;
         min-height: 768px;
         background-size: cover;
     }
@@ -271,6 +268,14 @@
         margin-bottom: 22px;
     }
 
+    .contacts__btn {
+        transition: all 0.3s ease 0s;
+    }
+
+    .contacts__btn:hover {
+        font-size: 13px;
+    }
+
     .contacts__wrap-btn {
         order: 3;
         width: 100%;
@@ -279,13 +284,11 @@
 
 @media (min-width: 1440px) {
     .contacts {
-        background: url("../img/cont-phone-desk.png") no-repeat center;
         min-height: 669px;
         background-size: cover;
     }
 
     .contacts__main {
-        background: url("../img/cont-phone-desk-main.jpg") no-repeat center;
         min-height: 744px;
         background-size: cover;
     }
