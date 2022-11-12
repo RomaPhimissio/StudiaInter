@@ -54,16 +54,3 @@ new Swiper('.slide__list-wrap', {
         }
     }
 })
-
-new Swiper('.showing__swiper', {
-
-    // клавиатура
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-        pageUpDown: true
-    },
-
-    // ширина слайда
-    slidesPerView: 'auto',
-})
