@@ -238,6 +238,17 @@
 
     .desc__img-wrap-body {
         padding-bottom: calc(454 / 912 * 100%);
+        overflow: hidden;
+
+        img {
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    .desc__img-wrap-body:hover {
+        img {
+            transform: scale(1.07);
+        }
     }
 
     .desc__content-subtitle {
@@ -268,6 +279,20 @@
     .desc__block-picture {
         padding-right: 16px;
         padding-left: 12px;
+    }
+
+    .desc__pic-wrap {
+        overflow: hidden;
+
+        img {
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    .desc__pic-wrap:hover {
+        img {
+            transform: scale(1.07);
+        }
     }
 
     .desc__pic-wrap:first-child {
